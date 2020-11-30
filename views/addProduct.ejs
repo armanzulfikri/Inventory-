@@ -1,0 +1,41 @@
+<%- include('partials/header.ejs') %>
+<style>
+  html,body{
+background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+h3{
+  color : white;
+}
+
+label{
+  color : white;
+  
+}
+</style>
+  <div class="container">
+      <div class="row">
+          <div class="col-6 mx-auto">
+              <h3>Add Product</h3>
+              <form action='/product/add' method="POST">
+                <div class="form-group">
+                  <label for="BrandId">Brand ID</label>
+                  <input type="number" class="form-control" id="BrandId" name="BrandId">
+                </div>
+                <div class="form-group">
+                    <label for="CategoryId">CategoryID</label>
+                    <input type="number" class="form-control" id="CategoryId" name="CategoryId">
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+      </div>
+</div>
+
+  
+<%- include('partials/footer.ejs') %>
+   

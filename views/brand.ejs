@@ -1,0 +1,51 @@
+<%- include('partials/header.ejs') %>
+<style>
+  html,body{
+background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+h3{
+  color : rgb(240, 240, 245);
+}
+th{
+  color : rgb(240, 240, 245);
+}
+tr{
+  color : rgb(240, 240, 245);
+}
+</style>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 mx-auto">
+              <div class="mt-5">
+                <h3 class="float-left">List Brand</h3>
+                <a href="/brand/add" class="btn btn-sm btn-primary float-right">Add Brand</a>
+              </div>
+              <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <% brand.forEach(label => { %>
+                        <tr>
+                            <td><%= label.id %></td>
+                            <td><%= label.name %></td>
+                            <td><a href="brand/edit/<%= label.id %>" class="btn btn-sm btn-info">Edit</a><a href="brand/delete/<%= label.id %>" class="btn btn-sm btn-danger">Delete</a></td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+              </table>
+          </div>
+      </div>
+</div>
+
+  
+<%- include('partials/footer.ejs') %>
+   

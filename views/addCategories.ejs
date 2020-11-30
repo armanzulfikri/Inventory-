@@ -1,0 +1,61 @@
+<%- include('partials/header.ejs') %>
+<style>
+    html,body{
+  background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: 'Numans', sans-serif;
+  }
+  h3{
+    color : white;
+  }
+  
+  label{
+    color : white;
+    
+  }
+  </style>
+  <div class="container">
+      <div class="row">
+          <div class="col-6 mx-auto">
+              <h3>Add Categories</h3>
+              <form action='/categories/add' method="POST">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="info">image</label>
+                    <input type="text" class="form-control" id="info" name="info">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="stock">Stock</label>
+                    <input type="number" class="form-control" id="stock" name="stock">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" class="form-control" id="price" name="price">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="waranty">Waranty</label>
+                    <input type="text" class="form-control" id="waranty" name="waranty">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="no_product">No.Product</label>
+                    <input type="text" class="form-control" id="no_product" name="no_product">
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+      </div>
+</div>
+
+  
+<%- include('partials/footer.ejs') %>
+   

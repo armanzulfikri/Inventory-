@@ -1,0 +1,47 @@
+<%- include('partials/header.ejs')%>
+<style>
+    html,body{
+  background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: 'Numans', sans-serif;
+  }
+  h1{
+    color : rgb(240, 240, 245);
+    text-decoration: blink;
+  }
+  th{
+    color : rgb(240, 240, 245);
+  }
+  tr{
+    color : rgb(240, 240, 245);
+  }
+  #blink {
+text-align:center;
+background: rgba(114, 114, 236, 0.541);
+color:#F00;
+margin: 0 auto;
+padding:15px;
+border: 1px  rgba(114, 114, 236, 0.541);
+width: 900px;
+border-radius :15px 0;
+}
+
+#blink span {
+font-size:2em;
+font-weight:bold;
+display:block;
+font-family: arial;
+}
+  </style>
+    <div class="container text-center">
+        <div id="blink">
+        <h1><marquee scrolldelay="50" direction="left">Welcome To Toko Komputer</marquee></h1>
+        <h1><marquee scrolldelay="50" direction="right">Mr.Wawan Neighborhood</marquee></h1> 
+</div>
+
+      
+    </div>
+
+<%- include('partials/footer.ejs')%>
